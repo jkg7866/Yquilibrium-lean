@@ -1,0 +1,702 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["a208ed31ddeeb2dc.olean"],
+  "m": false,
+  "i": "6abefe7229843ee4.ilean",
+  "c": "ad8be94f4b4f97df.c"},
+ "log":
+ [{"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Semicontinuity.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Instances.Real.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Data.Matrix.Mul` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Analysis.Convex.Function` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports.lean: imports `Mathlib.Order.Filter.AtTopBot.Archimedean` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.Analysis.LocallyConvex.Separation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.Analysis.Normed.Module.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.LinearAlgebra.Pi` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.Analysis.LocallyConvex.Separation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.Analysis.Normed.Module.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium\\Imports2.lean: imports `Mathlib.LinearAlgebra.Pi` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file",
+   "level": "warning"},
+  {"message":
+   ".> LEAN_PATH=C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\altea\\lean\\yqlean\\.lake\\build\\lib\\lean c:\\Users\\altea\\.elan\\toolchains\\leanprover--lean4---v4.37.0-rc1\\bin\\lean.exe C:\\Users\\altea\\lean\\yqlean\\Yquilibrium\\Duality.lean -o C:\\Users\\altea\\lean\\yqlean\\.lake\\build\\lib\\lean\\Yquilibrium\\Duality.olean -i C:\\Users\\altea\\lean\\yqlean\\.lake\\build\\lib\\lean\\Yquilibrium\\Duality.ilean -c C:\\Users\\altea\\lean\\yqlean\\.lake\\build\\ir\\Yquilibrium\\Duality.c --setup C:\\Users\\altea\\lean\\yqlean\\.lake\\build\\ir\\Yquilibrium\\Duality.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "Yquilibrium/Duality.lean:79:13: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead\n\nHint: Replace the deprecated name:\n  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium/Duality.lean:108:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium/Duality.lean:183:82: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead\n\nHint: Replace the deprecated name:\n  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium/Duality.lean:204:4: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"},
+  {"message":
+   "Yquilibrium/Duality.lean:222:8: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+   "level": "warning"}],
+ "inputs":
+ [["deps",
+   [["Yquilibrium/Yquilibrium:extraDep", "3bbcb9642bf89ff6"],
+    ["imports",
+     [["Yquilibrium.Welfare2 transitive imports (legacy)", "e6997f317e130648"],
+      ["Yquilibrium.Welfare2:importAllArts", "023f00bb9e0c5e23"],
+      ["Mathlib.Analysis.Convex.Quasiconvex transitive imports (legacy)",
+       "5be22bf57e31fae5"],
+      ["Mathlib.Analysis.Convex.Quasiconvex:importAllArts", "b23180e55916fef9"],
+      ["Mathlib.Topology.Order.IntermediateValue transitive imports (legacy)",
+       "937b178b57928f67"],
+      ["Mathlib.Topology.Order.IntermediateValue:importAllArts",
+       "5da32f95c8a45031"]]]]],
+  ["libs",
+   [["import dynlibs", "00000000000006bb"],
+    ["package external libraries", "00000000000006bb"],
+    ["module dynlibs", "00000000000006bb"],
+    ["module plugins", "00000000000006bb"]]],
+  ["Lean 4.37.0, commit 0b77e12952ad39077d80d8bd6b66d601f225c321",
+   "bcf07d1dd7796db5"],
+  ["C:\\Users\\altea\\lean\\yqlean\\Yquilibrium\\Duality.lean",
+   "8f339447e796502c"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Yquilibrium.Duality", "60044cd977fc53e8"],
+  ["Package.id?: (some Yquilibrium)", "04dd2ef24acb3eab"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "96894060e657c221"}
