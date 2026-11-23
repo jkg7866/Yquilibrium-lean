@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+title: "Yquilibrium: Lean 4 formalization"
+authors:
+  - family-names: Goeree
+    given-names: Jacob K.
+version: 1.0.0
+date-released: 2026-11-23

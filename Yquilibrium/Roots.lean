@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Appendix A.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Appendix A.
   Lemma 3 (roots), Theorem 2(a)–(b) (Yquilibria for an income distribution, Walrasian
   equilibria) and Corollary 1(a) (first welfare theorem).
 -/

@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Section 2.3 and Appendix A.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Section 2.3 and Appendix A.
   Theorem 3: duality between the utility possibility set (UPS) and the indirect utility
   possibility set (VPS), with the VPS taken over strictly positive prices.
 -/

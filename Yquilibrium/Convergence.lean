@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Theorem 4, part 2: the deterministic half of convergence.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Theorem 4, part 2: the deterministic half of convergence.
   If every limit point of the path is Pareto optimal, the path converges, and its limit is an
   individually-rational Yquilibrium (Steps 2–3 of the proof, minus the probabilistic part).
 -/

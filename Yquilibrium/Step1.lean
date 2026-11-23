@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Theorem 4, Step 1: near any non-Pareto-optimal state, a
+  Yquilibrium (Goeree, version of 23 Nov 2026), Theorem 4, Step 1: near any non-Pareto-optimal state, a
   fixed proposer–responder pair, a neighbourhood of prices and a range of trade sizes make the
   sum of utilities rise by a fixed amount.
 -/

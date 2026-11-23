@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Appendix A.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Appendix A.
   Corollary 1(b) (second welfare theorem): with convex preferences every Pareto-optimal
   allocation is part of a root.
 -/

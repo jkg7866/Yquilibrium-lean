@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Theorem 4: measurability of the stochastic dynamic.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Theorem 4: measurability of the stochastic dynamic.
   Draws carry the σ-algebra that is discrete on the proposer and the order and Borel on the
   price and the trade size. One period of trade is then a measurable map of the state and the
   draw (on non-negative states and strictly positive prices, which is all the path visits),

@@ -37,3 +37,8 @@ open Yq Yq.Economy
 #print axioms barter
 #print axioms theorem4
 #print axioms fullSupport_of_indep
+#print axioms Y_nonneg
+#print axioms root_pos_pareto
+#print axioms optimal_mu
+#print axioms optimal_of_mu
+#print axioms root_iff

@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Remark 1: Debreu's coefficient of resource utilization
+  Yquilibrium (Goeree, version of 23 Nov 2026), Remark 1: Debreu's coefficient of resource utilization
   and the dead loss.
 -/
 import Yquilibrium.Welfare2

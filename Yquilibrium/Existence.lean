@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Theorem 2(c): with convex preferences, the potential has a
+  Yquilibrium (Goeree, version of 23 Nov 2026), Theorem 2(c): with convex preferences, the potential has a
   root at every income distribution `m ∈ Σ_N`.
 
   The paper derives this from the Arrow–Debreu existence theorem. Mathlib has no fixed-point

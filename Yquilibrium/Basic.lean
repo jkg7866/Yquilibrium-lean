@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Appendix A.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Appendix A.
   Setup, the minimum-income function μ, and Lemma 1.
 -/
 import Yquilibrium.Imports

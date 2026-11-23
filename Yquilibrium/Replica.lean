@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Proposition 1: the non-convex replica economy with
+  Yquilibrium (Goeree, version of 23 Nov 2026), Proposition 1: the non-convex replica economy with
   n buyers (a = 3/5, ω = (25,45)) and n sellers (a = 9/20, ω = (75,55)), CES with ρ = 5/2.
   Prices enter through the ratio r = p₀/(p₀+p₁) (the paper's p).
 -/

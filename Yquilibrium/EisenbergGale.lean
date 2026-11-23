@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Appendix (computational aspects), Lemma 4.
+  Yquilibrium (Goeree, version of 23 Nov 2026), Appendix (computational aspects), Lemma 4.
   For concave, linearly homogeneous utilities (CES being the leading example) and incomes
   m ≫ 0, the Eisenberg–Gale objective ∑ᵢ mᵢ (log vᵢ(p,mᵢ) − log uᵢ(xᵢ)) is convex and
   non-negative, and its roots are the Walrasian equilibria for m.

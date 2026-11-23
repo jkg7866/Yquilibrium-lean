@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Definition 4 (stochastic dynamic) and Theorem 4,
+  Yquilibrium (Goeree, version of 23 Nov 2026), Definition 4 (stochastic dynamic) and Theorem 4,
   part 1: the pathwise properties (invariance, individual rationality, feasibility, barter).
   These hold for every sequence of draws, not just almost surely.
 -/

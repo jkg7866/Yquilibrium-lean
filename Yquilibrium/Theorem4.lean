@@ -1,5 +1,5 @@
 /-
-  Yquilibrium (Goeree, 21 Nov 2026), Theorem 4: almost-sure convergence of the stochastic
+  Yquilibrium (Goeree, version of 23 Nov 2026), Theorem 4: almost-sure convergence of the stochastic
   dynamic to an individually-rational Yquilibrium.
 
   Draws are i.i.d. with law `ν` (the infinite product `Measure.infinitePi`). The paper assumes
