@@ -1,7 +1,8 @@
 /-
   Yquilibrium (Goeree, version of 23 Nov 2026), Section 2.3 and Appendix A.
   Theorem 3: duality between the utility possibility set (UPS) and the indirect utility
-  possibility set (VPS), with the VPS taken over strictly positive prices.
+  possibility set (VPS). The VPS is taken over all prices in `Σ_K(W)`; where a price is zero,
+  indirect utility can be infinite, and those points (never on the frontier) are left out.
 -/
 import Yquilibrium.Welfare2
 import Mathlib.Analysis.Convex.Quasiconvex
@@ -65,8 +66,19 @@ structure Represents (E : Economy N K) (u : N → (K → ℝ) → ℝ) : Prop wh
 /-- The utility possibility set. -/
 def UPS : Set (N → ℝ) := {w | ∃ x, E.Feasible x ∧ w = fun i => u i (x i)}
 
-/-- The indirect utility possibility set, over strictly positive prices. -/
+/-- The budget set `{z ≥ 0 | ⟨p|z⟩ ≤ m}`. -/
+def budget (p : K → ℝ) (m : ℝ) : Set (K → ℝ) := {z | 0 ≤ z ∧ dot p z ≤ m}
+
+/-- The indirect utility possibility set: indirect utilities `v(p,m)` for `p ∈ Σ_K(W)` and
+  `m ∈ Σ_N`, keeping the vectors whose entries are finite (utility bounded on each budget set).
+  Mathlib's `sSup` of a set that is unbounded above is a junk value, not `+∞`, so the infinite
+  vectors must be excluded explicitly; they are never minimal in any case. -/
 def VPS : Set (N → ℝ) :=
+  {w | ∃ p m, p ∈ E.Prices ∧ Incomes m ∧ (∀ i, BddAbove (u i '' budget p (m i))) ∧
+    w = fun i => vind (u i) p (m i)}
+
+/-- The VPS over strictly positive prices only (used in the proofs). -/
+def VPSpos : Set (N → ℝ) :=
   {w | ∃ p m, p ∈ E.Prices ∧ (∀ k, 0 < p k) ∧ Incomes m ∧ w = fun i => vind (u i) p (m i)}
 
 variable {E u}
@@ -147,7 +159,7 @@ theorem step1 [Nonempty K] (hu : E.Represents u) {x : N → K → ℝ} {p : K �
 theorem walrasian_extremal [Nonempty K] (hu : E.Represents u) {x : N → K → ℝ} {p : K → ℝ}
     {m : N → ℝ} (hW : E.IsWalrasianFor m x p) (hpos : ∀ k, 0 < p k) (hm : Incomes m) :
     (fun i => u i (x i)) = (fun i => vind (u i) p (m i)) ∧
-      IsMaxIn (E.UPS u) (fun i => u i (x i)) ∧ IsMinIn (E.VPS u) (fun i => u i (x i)) := by
+      IsMaxIn (E.UPS u) (fun i => u i (x i)) ∧ IsMinIn (E.VPSpos u) (fun i => u i (x i)) := by
   have hval : ∀ i, u i (x i) = vind (u i) p (m i) :=
     fun i => vind_eq_of_optimal hu i (hW.2.2 i) hpos (hm.1 i)
   refine ⟨funext hval, ⟨⟨x, hW.1, rfl⟩, ?_⟩, ⟨⟨p, m, hW.2.1, hpos, hm, funext hval⟩, ?_⟩⟩
@@ -163,14 +175,14 @@ theorem walrasian_extremal [Nonempty K] (hu : E.Represents u) {x : N → K → �
 
 /-- **Theorem 3, Step 2**: below every point `v(p,m)` of the VPS lies a maximal point of the UPS. -/
 theorem step2 [Nonempty N] [Nonempty K] (hu : E.Represents u) {p : K → ℝ} {m : N → ℝ}
-    (hp : p ∈ E.Prices) (hpos : ∀ k, 0 < p k) (hm : Incomes m) :
+    (hp : p ∈ E.Prices) (hm : Incomes m) (hbdd : ∀ i, BddAbove (u i '' budget p (m i))) :
     ∃ x, E.Feasible x ∧ (∀ i, u i (x i) ≤ vind (u i) p (m i)) ∧
       IsMaxIn (E.UPS u) (fun i => u i (x i)) := by
   classical
-  choose zs hzs hv hmax using fun i => vind_attained (hu.cont i) hpos (hm.1 i)
-  have hu0 : ∀ i, u i 0 ≤ vind (u i) p (m i) := fun i => by
-    rw [hv i]
-    exact hmax i 0 le_rfl (by rw [dot_zero_right]; exact hm.1 i)
+  have hle_v : ∀ i z, 0 ≤ z → dot p z ≤ m i → u i z ≤ vind (u i) p (m i) :=
+    fun i z hz hzm => le_csSup (hbdd i) ⟨z, ⟨hz, hzm⟩, rfl⟩
+  have hu0 : ∀ i, u i 0 ≤ vind (u i) p (m i) := fun i =>
+    hle_v i 0 le_rfl (by rw [dot_zero_right]; exact hm.1 i)
   have hcontF : ∀ i, ContinuousOn (fun x : N → K → ℝ => u i (x i)) {x | E.Feasible x} :=
     fun i => (hu.cont i).comp (continuous_apply i).continuousOn fun x hx => hx.1 i
   -- the compact set A = {x ∈ F(W) | u(x) ≤ v(p,m)}
@@ -198,14 +210,6 @@ theorem step2 [Nonempty N] [Nonempty K] (hu : E.Represents u) {p : K → ℝ} {m
     (continuousOn_finsetSum Finset.univ fun i _ => (hcontF i).mono fun x hx => hx.1)
   rw [isMaxOn_iff] at hxmax
   refine ⟨xs, hxsA.1, hxsA.2, ?_⟩
-  by_cases hS : ∃ i0, u i0 (xs i0) < vind (u i0) p (m i0)
-  swap
-  · -- u(x*) = v(p,m): Step 1
-    push_neg at hS
-    have heq : ∀ i, u i (xs i) = vind (u i) p (m i) := fun i => le_antisymm (hxsA.2 i) (hS i)
-    obtain ⟨hW, -⟩ := step1 hu hxsA.1 hp hpos hm fun i => (heq i).ge
-    exact (walrasian_extremal hu hW hpos hm).2.1
-  obtain ⟨i0, hi0⟩ := hS
   -- x* is weakly Pareto optimal
   have hWPO : E.WeaklyParetoOptimal xs := by
     refine ⟨hxsA.1, ?_⟩
@@ -213,6 +217,22 @@ theorem step2 [Nonempty N] [Nonempty K] (hu : E.Represents u) {p : K → ℝ} {m
     have hy0 : ∀ i, 0 ≤ y i := hyF.1
     have hyimp : ∀ i, u i (xs i) < u i (y i) := fun i => lt_of_not_ge fun h =>
       hy i ((hu.rep i (xs i) (y i) (hxsA.1.1 i) (hy0 i)).2 h)
+    by_cases hS : ∃ i0, u i0 (xs i0) < vind (u i0) p (m i0)
+    swap
+    · -- u(x*) = v(p,m): every yᵢ costs more than mᵢ, so y is not feasible
+      push_neg at hS
+      have hcost : ∀ i, m i < dot p (y i) := fun i => lt_of_not_ge fun h =>
+        absurd (hle_v i (y i) (hy0 i) h)
+          (not_le.2 (lt_of_le_of_lt (hS i) (hyimp i)))
+      have h1 : ∑ i, m i < ∑ i, dot p (y i) := Finset.sum_lt_sum_of_nonempty
+        Finset.univ_nonempty fun i _ => hcost i
+      have h2 : ∑ i, dot p (y i) ≤ dot p E.W := by
+        rw [← dot_sum_right]
+        exact Finset.sum_le_sum fun k _ => mul_le_mul_of_nonneg_left
+          (by rw [Finset.sum_apply]; exact hyF.2 k) (hp.1 k)
+      rw [hm.2, hp.2] at *
+      linarith
+    obtain ⟨i0, hi0⟩ := hS
     -- scale each yᵢ down to the level set u = vᵢ when necessary
     have hscale : ∀ i, ∃ t ∈ Icc (0 : ℝ) 1,
         u i (t • y i) = min (u i (y i)) (vind (u i) p (m i)) := by
@@ -271,13 +291,30 @@ lemma pareto_of_max (hu : E.Represents u) {x : N → K → ℝ} (hx : E.Feasible
   have := congrFun heq j
   exact hj ((hu.rep j (x j) (x' j) (hx.1 j) (hx'.1 j)).2 this.le)
 
+/-- For `p ≫ 0`, utility is bounded on every budget set. -/
+lemma bdd_of_pos (hu : E.Represents u) {p : K → ℝ} (hpos : ∀ k, 0 < p k) {m : N → ℝ}
+    (hm : Incomes m) (i : N) : BddAbove (u i '' budget p (m i)) := by
+  obtain ⟨zs, -, -, hmax⟩ := vind_attained (hu.cont i) hpos (hm.1 i)
+  exact ⟨u i zs, by rintro _ ⟨z, ⟨hz, hzm⟩, rfl⟩; exact hmax z hz hzm⟩
+
 lemma max_to_min [Nonempty N] [Nonempty K] (hu : E.Represents u) {w : N → ℝ}
     (h : IsMaxIn (E.UPS u) w) : IsMinIn (E.VPS u) w := by
   obtain ⟨⟨x, hx, rfl⟩, hmax⟩ := h
   have hPO := pareto_of_max hu hx ⟨⟨x, hx, rfl⟩, hmax⟩
   obtain ⟨p, hroot, hpos, _⟩ := E.corollary1_b (fun i => isConvex_of_rep hu i) hPO
   obtain ⟨m, hm, hW⟩ := E.root_iff.1 hroot
-  exact (walrasian_extremal hu hW hpos hm).2.2
+  obtain ⟨hval, -, -⟩ := walrasian_extremal hu hW hpos hm
+  refine ⟨⟨p, m, hW.2.1, hm, bdd_of_pos hu hpos hm, hval⟩, ?_⟩
+  -- below any `v(p',m') ≤ u(x)` lies a maximal point of the UPS, which must be `u(x)`
+  rintro _ ⟨p', m', hp', hm', hbdd', rfl⟩ hle
+  obtain ⟨xs, -, hxsle, hxsmax⟩ := step2 hu hp' hm' hbdd'
+  have heq : (fun i => u i (x i)) = fun i => u i (xs i) :=
+    hxsmax.2 _ ⟨x, hx, rfl⟩ fun i => (hxsle i).trans (hle i)
+  funext i
+  refine le_antisymm (hle i) ?_
+  have := congrFun heq i
+  rw [this]
+  exact hxsle i
 
 /-- **Theorem 3** (duality): with continuous, quasiconcave utilities (monotone as in Section 2),
   `w` is a maximal element of the UPS iff it is a minimal element of the VPS. -/
@@ -285,27 +322,28 @@ theorem theorem3 [Nonempty N] [Nonempty K] (hu : E.Represents u) (w : N → ℝ)
     IsMaxIn (E.UPS u) w ↔ IsMinIn (E.VPS u) w := by
   constructor
   · exact max_to_min hu
-  · rintro ⟨⟨p, m, hp, hpos, hm, rfl⟩, hmin⟩
-    obtain ⟨xs, _, hxsle, hxsmax⟩ := step2 hu hp hpos hm
+  · rintro ⟨⟨p, m, hp, hm, hbdd, rfl⟩, hmin⟩
+    obtain ⟨xs, _, hxsle, hxsmax⟩ := step2 hu hp hm hbdd
     have heq := hmin _ (max_to_min hu hxsmax).1 fun i => hxsle i
     rw [← heq]
     exact hxsmax
 
-/-- **Theorem 3**, second part: `(p,m)` attains a minimal element of the VPS iff `p` is a
-  Walrasian equilibrium price for the income distribution `m`. -/
+/-- **Theorem 3**, second part: for `p ≫ 0`, `(p,m)` attains a minimal element of the VPS iff
+  `p` is a Walrasian equilibrium price for the income distribution `m`. -/
 theorem theorem3_attain [Nonempty N] [Nonempty K] (hu : E.Represents u) {p : K → ℝ}
     {m : N → ℝ} (hp : p ∈ E.Prices) (hpos : ∀ k, 0 < p k) (hm : Incomes m) :
     IsMinIn (E.VPS u) (fun i => vind (u i) p (m i)) ↔ ∃ x, E.IsWalrasianFor m x p := by
   constructor
   · rintro ⟨_, hmin⟩
-    obtain ⟨xs, hxsF, hxsle, hxsmax⟩ := step2 hu hp hpos hm
+    obtain ⟨xs, hxsF, hxsle, hxsmax⟩ := step2 hu hp hm (bdd_of_pos hu hpos hm)
     have heq := hmin _ (max_to_min hu hxsmax).1 fun i => hxsle i
     refine ⟨xs, (step1 hu hxsF hp hpos hm fun i => ?_).1⟩
     have := congrFun heq i
     exact this.symm.le
   · rintro ⟨x, hW⟩
-    obtain ⟨hval, -, hmin⟩ := walrasian_extremal hu hW hpos hm
-    rwa [hval] at hmin
+    obtain ⟨hval, hmaxx, -⟩ := walrasian_extremal hu hW hpos hm
+    rw [← hval]
+    exact max_to_min hu hmaxx
 
 end Economy
 
